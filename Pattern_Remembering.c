@@ -35,18 +35,11 @@ int main()
 
 		if (tmp > 0) {
 			matrix_out[i] = 1;
-		}
-		else if (tmp < 0) {
-			matrix_out[i] = -1;
-		}
-
-		if (matrix_out[i] == 1) {
 			printf("■");
-		}
-		else if (matrix_out[i] == -1) {
+		}else if (tmp < 0) {
+			matrix_out[i] = -1;
 			printf("□");
-		}
-		else {
+		}else {
 			printf("★");//error
 		}
 
@@ -55,5 +48,4 @@ int main()
 		}
 	}
     return 0;
-}
 }
